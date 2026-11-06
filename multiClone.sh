@@ -14,7 +14,7 @@ if [ -f settings.cfg ]; then
   echo "Cloning Git: $GIT_NAME"
 else
   echo "ERROR: Create settings.cfg (from settings.cfg.example)"
-  exit
+  exit 1
 fi
 
 # CONSTS

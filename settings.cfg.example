@@ -1,20 +1,24 @@
 # --------------------------------------------------------
-# Create settings.cfg and updated your settings
+# Create settings.cfg and update your settings
 # --------------------------------------------------------
 
-# Settings
-
-# Where to Clone
-DEST_FOLDER="/My/Git/Repos"
-
-# User or Organization Name from GitHub url
+# Shared: GitHub user or organization name (from the GitHub URL)
 GIT_NAME="username"
 
-# Select GitHub account type - User=1 Organization=2
+# Shared: debug mode — set to "false" to perform real git operations
+DEBUG_MODE="true"
+
+# multiClone: where to clone repositories
+DEST_FOLDER="/My/Git/Repos"
+
+# multiClone: account type — User=1 Organization=2
 USER_ORG="1"
 
-# Select repo clone mode - GIT=1 HTTPS=2
+# multiClone: clone protocol — GIT=1 HTTPS=2
 GIT_HTTPS="1"
 
-# Debug mode: set to "false" to enable cloning
-DEBUG_MODE="true"
+# multiPull: folders to pull (if unset, uses DEST_FOLDER)
+# DEST_FOLDERS=("/My/Git/Repos" "/My/Other/Repos")
+
+# multiCreate: folder whose subfolders become GitHub repos
+FOLDER="/temp"
